@@ -5,7 +5,27 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>ABOBA</h1>
-        <span>Hello my name is Boicookings</span>
+        <div id="example">
+        </div>
+
+        <hr>
+        <br>
+        <div>
+            <a href="https://www.youtube.com/" target="_blank" title="Youtube Website">
+                Go to Youtube
+            </a>
+            <a href="">
+                
+            </a>
+        </div>
+
+
+        <script>
+            fetch('main.html')
+                .then(Response => Response.text())
+                .then(data => {
+                    document.getElementById('example').innerHTML = data;
+                });
+        </script>
     </body>
 </html>
