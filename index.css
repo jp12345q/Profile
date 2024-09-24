@@ -1,7 +1,16 @@
 body{
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
 }
 
+.design h1{
+    text-align: center;
+    font-size: 42px;
+}
+
+.design p{
+    text-align: center;
+    font-size: 25px;
+}
 
 h1{
     color:brown;
