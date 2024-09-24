@@ -2,23 +2,8 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.design h1{
-    text-align: center;
-    font-size: 42px;
-}
+/* Index html */
 
-.design p{
-    text-align: center;
-    font-size: 25px;
-}
-
-h1{
-    color:brown;
-    font-family:'Arial Narrow'; 
-}
-
-span{
-    color:blue;
-    font-size: larger;
-    font-family:'Franklin Gothic Medium';
+.linkbelow a{
+    margin: 100px;
 }
