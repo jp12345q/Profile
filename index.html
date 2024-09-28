@@ -4,8 +4,14 @@
         <title>Manong</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="icon" type="image/png" href="buh.png">
     </head>
     <body>
+
+        <div id="navbars">
+        </div>
+
         <div id="example">
         </div>
 
@@ -20,13 +26,8 @@
             </a>
         </div>
 
-
-        <script>
-            fetch('main.html')
-                .then(Response => Response.text())
-                .then(data => {
-                    document.getElementById('example').innerHTML = data;
-                });
+        <script src="scripter.js">
         </script>
+
     </body>
 </html>
