@@ -4,8 +4,8 @@ fetch('main.html')
     document.getElementById('example').innerHTML = data;
 });
 
-fetch('navbar.html')
+fetch('header.html')
 .then(Response => Response.text())
 .then(data => {
-    document.getElementById('navbars').innerHTML = data;
+    document.getElementById('headers').innerHTML = data;
 });

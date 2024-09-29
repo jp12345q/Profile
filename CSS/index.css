@@ -4,6 +4,28 @@ body{
 
 /* Index html */
 
-.linkbelow a{
-    margin: 100px;
+.linkbelow{
+    margin: 50px;
+    padding: 25px;
+}
+
+.link1 button{
+    font-size: 32px;
+    font-style: bold;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.link2 button{
+    font-size: 32px;
+    font-style: bold;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+.link3 button{
+    font-size: 32px;
+    font-style: bold;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
