@@ -1,9 +1,17 @@
 /* Main html */
+.design pre{
+    border-top: 10px solid black;
+    border-bottom: 10px solid red;
+    border-left: 5px dotted yellow;
+    border-right: 5px dotted blue;
+    border-radius: 200px;
+}
+
 .design p{
     text-align: center;
-    font-size: 25px;
+    font-size: 3em;
 }
 
 .design mark{
-    background-color: lightseagreen;
+    background-color: darkorange;
 }   
