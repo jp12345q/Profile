@@ -9,23 +9,20 @@ body{
     padding: 25px;
 }
 
-.link1 button{
-    font-size: 32px;
-    font-style: bold;
-    background-color: red;
-    border-radius: 10px;
+#button1{
+    background-color: orangered;
 }
 
-.link2 button{
-    font-size: 32px;
-    font-style: bold;
-    background-color: blanchedalmond;
-    border-radius: 10px;
+#button2{
+    background-color: khaki;
 }
 
-.link3 button{
-    font-size: 32px;
-    font-style: bold;
+#button3{
     background-color: whitesmoke;
+}
+
+.space{
+    font-size: 32px;
+    font-style: bold;
     border-radius: 10px;
 }
