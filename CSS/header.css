@@ -3,4 +3,6 @@
     font-size: 72px;
     text-align: center;
     color: rgb(255, 0, 0);
+    text-shadow: 5px 2px 3px hsl(0, 1%, 38%), -5px -2px 3px hsla(0, 0%, 33%, 0.274);
+    
 }

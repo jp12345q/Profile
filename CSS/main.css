@@ -10,6 +10,8 @@
 .design p{
     text-align: center;
     font-size: 3em;
+    margin: 20px;
+    padding: 20px;
 }
 
 .design mark{
