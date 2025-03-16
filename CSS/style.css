@@ -307,7 +307,7 @@ section .button button{
 }
 section .button button:hover{
     border-color: rgb(252, 252, 252);
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(38, 38, 44);
     color: rgb(255, 255, 255);
 }
 
