@@ -1,37 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Manong</title>
+        <title>Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
         <link rel="stylesheet" href="/CSS/index.css">
         <link rel="stylesheet" href="/CSS/main.css">
         <link rel="stylesheet" href="/CSS/header.css">
+        -->
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <link rel="icon" type="image/png" href="/buh.png">
     </head>
     <body>
 
-        <div id="headers">
-        </div>
+        <!-- Nav -->
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <span>John Paul</span>
+                </div>
+                <div class="links">
+                    <div class="link"><a href="#">Home</a></div>
+                    <div class="link"><a href="#">About</a></div>
+                    <div class="link"><a href="#">Skill</a></div>
+                    <div class="link"><a href="#">Service</a></div>
+                    <div class="link"><a href="#">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skill</a>
+                    <a href="#">Experience</a>
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
 
-        <div id="example">
-        </div>
+        <!-- Section -->
+        <section>
+            <div class="main-container">
+                <div class="image">
+                    <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/449700657_3356874561112473_7121754879974583157_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGbBTrOKlNyvANqXnA_Gptknlf4oJ2-hgmeV_ignb6GCczgwvi_n7hvPnx6eMR0ayDeowhxurf4rmL_DK-rOXwa&_nc_ohc=NWlEJVFt_1oQ7kNvgGJku4Z&_nc_oc=AdjfIat43FF2kRsFCCqpGTVvTd7hV6U1-G5cQeCDrZXX43b-w-A_Mva0y4g04bwS2ME&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=oHCxx_d4jlSn4JM2cYkp8g&oh=00_AYG4Bs47_8wKA67Mc24sChZtMHX8Aq_enEDEwltmK9dUPw&oe=67DC029D" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left">
+                        Hey I'm
+                        <span>John Paul</span>
+                    </h1>
+                    <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, 
+                        a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). 
+                        Length and appearance do not determine whether a section in a paper is a paragraph.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="btn">
+                        <button>Hire me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         
-        <br>
-        <div class="linkbelow">
-            <button id="button1" class="space">
-                <a id="a1" href="https://www.youtube.com" target="_blank" title="Youtube Website">Go to Youtube</a>
-            </button>
-            <button id="button2" class="space">
-                <a id="a1" href="https://mail.google.com/mail/u/0/#inbox" target="_blank" title="Mail">Go to Gmail</a>
-            </button>
-            <button id="button3" class="space">
-                <a id="a1" href="https://www.google.com/" target="_blank" title="Google Search">Go to Google</a>
-            </button>
-        </div>
+        <!-- Main Start -->
 
+        <!--About me-->
+        <section class="about" id="about">
+            <div class="content">
+                <div class="title">
+                    <span>About me</span>
+                </div>
+                <div class="about-details">
+                    <div class="left">
+                        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/449700657_3356874561112473_7121754879974583157_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGbBTrOKlNyvANqXnA_Gptknlf4oJ2-hgmeV_ignb6GCczgwvi_n7hvPnx6eMR0ayDeowhxurf4rmL_DK-rOXwa&_nc_ohc=NWlEJVFt_1oQ7kNvgGJku4Z&_nc_oc=AdjfIat43FF2kRsFCCqpGTVvTd7hV6U1-G5cQeCDrZXX43b-w-A_Mva0y4g04bwS2ME&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=oHCxx_d4jlSn4JM2cYkp8g&oh=00_AYG4Bs47_8wKA67Mc24sChZtMHX8Aq_enEDEwltmK9dUPw&oe=67DC029D" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="topic">Game QA is My Passion</div>
+                        <p>
+                            BLANK
+                        </p>
+                        <div class="button">
+                            <button>Download CV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--My skill-->
+        <section class="skills" id="skills">
+            <div class="content">
+                <div class="title">
+                    <span>My Skills</span>
+                </div>
+                <div class="skills-details">
+                    <div class="text">
+                        <div class="topic">
+                            Skills Reflects Our Knowledge
+                        </div>
+                        <p data-aos="fade-right">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, 
+                            a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). 
+                            Length and appearance do not determine whether a section in a paper is a paragraph.</p>
+                        <div class="experience">
+                            <div class="num">10
+                                <div class="exp">
+                                    Month Of <br/> Experience
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <div class="box">
+                                <div class="topic">Computer Skills</div>
+                                <div class="per">91%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">QA</div>
+                                <div class="per">85%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">HTML</div>
+                                <div class="per">70%</div>
+                            </div>
+                            <div class="box">
+                                <div class="topic">CSS</div>
+                                <div class="per">67%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--My services-->
+        <section class ="service" id="services">
+            <div class="content">
+                <div class="title"><span>My Experience</span></div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <div class="topic">Encoder</div>
+                        <p>Blank stqwt</p>
+                        <img src="https://burst.shopifycdn.com/photos/macbook-air-on-desk.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="topic">QA Game</div>
+                        <p>Blank stqwt</p>
+                        <img src="https://burst.shopifycdn.com/photos/macbook-air-on-desk.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="topic">Web Development</div>
+                        <p>Blank stqwt</p>
+                        <img src="https://burst.shopifycdn.com/photos/macbook-air-on-desk.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact #-->
+        <section class="contact" id="contact">
+            <div class="content">
+                <div class="title">
+                    <span>Contact Me</span>
+                </div>
+                <div class="text">
+                    <div class="topic">Any have conversation about me?</div>
+                    <div class="button">
+                        <button>Let's Chat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="text">
+                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--
         <script src="/JAVASCRIPT/scripter.js">
         </script>
+        -->
 
     </body>
 </html>
