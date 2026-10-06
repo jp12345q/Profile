@@ -1,202 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/style.css">
-        <!--
-        <link rel="stylesheet" href="CSS/header.css">
-        <link rel="stylesheet" href="CSS/index.css">
-        <link rel="stylesheet" href="CSS/main.css">
-        -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link rel="icon" type="image/png" href="buh.png">
-    </head>
-    <body>
- 
-        <!-- Nav -->
-        <nav>
-            <div class="nav-container">
-                <div class="logo">
-                    <span>John Paul</span>
-                </div>
-                <div class="links">
-                    <div class="link"><a href="#">Home</a></div>
-                    <div class="link"><a href="#">About</a></div>
-                    <div class="link"><a href="#">Skill</a></div>
-                    <div class="link"><a href="#">Experience</a></div>
-                    <div class="link"><a href="#">Contact</a></div>
-                </div>
-                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-            </div>
-            <div class="dropdown">
-                <div class="links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skill</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Contact</a>
-                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of John Paul Verdad, an Information Technology graduate focused on web and game development.">
+    <meta name="theme-color" content="#0b1020">
+    <title>John Paul Verdad | Developer Portfolio</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JAVASCRIPT/scripter.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="John Paul Verdad home">
+                <span class="brand-mark">JP</span>
+                <span class="brand-name">John Paul</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
+    </header>
 
-        <!-- Section -->
-        <section>
-            <div class="main-container">
-                <div class="image">
-                    <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/449700657_3356874561112473_7121754879974583157_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGbBTrOKlNyvANqXnA_Gptknlf4oJ2-hgmeV_ignb6GCczgwvi_n7hvPnx6eMR0ayDeowhxurf4rmL_DK-rOXwa&_nc_ohc=NWlEJVFt_1oQ7kNvgGJku4Z&_nc_oc=AdjfIat43FF2kRsFCCqpGTVvTd7hV6U1-G5cQeCDrZXX43b-w-A_Mva0y4g04bwS2ME&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=oHCxx_d4jlSn4JM2cYkp8g&oh=00_AYG4Bs47_8wKA67Mc24sChZtMHX8Aq_enEDEwltmK9dUPw&oe=67DC029D" alt="">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left">
-                        Hey I'm
-                        <span>John Paul</span>
-                    </h1>
-                    <p>Paragraph are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, 
-                         a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). 
-                        Length and appearance do not determine whether a section in a paper is a paragraph.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <main id="main-content">
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span class="status-dot"></span> BS Information Technology Graduate</p>
+                    <h1>Hi, I'm <span>John Paul Verdad.</span></h1>
+                    <h2>I build practical web tools and interactive experiences.</h2>
+                    <p class="hero-text">
+                        I'm focused on web and game development, turning ideas into useful, responsive projects with clean interfaces and reliable functionality.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">View my projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="button button-secondary" href="https://github.com/jp12345q" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a>
                     </div>
-                    <div class="btn">
-                        <button>Hire me</button>
+
+                    <div class="social-row" aria-label="Social links">
+                        <a href="https://github.com/jp12345q" target="_blank" rel="noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/jonpuroyohane" target="_blank" rel="noreferrer" aria-label="X / Twitter profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal" aria-label="Developer profile summary">
+                    <div class="profile-panel">
+                        <div class="panel-topbar">
+                            <span></span><span></span><span></span>
+                            <p>profile.js</p>
+                        </div>
+                        <div class="code-block" aria-hidden="true">
+                            <p><span class="code-keyword">const</span> developer = {</p>
+                            <p class="indent"><span class="code-property">name</span>: <span class="code-string">"John Paul"</span>,</p>
+                            <p class="indent"><span class="code-property">focus</span>: [<span class="code-string">"Web"</span>, <span class="code-string">"Games"</span>],</p>
+                            <p class="indent"><span class="code-property">mindset</span>: <span class="code-string">"Keep learning"</span>,</p>
+                            <p class="indent"><span class="code-property">status</span>: <span class="code-string">"Building"</span></p>
+                            <p>};</p>
+                        </div>
+                        <div class="panel-stack">
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                            <span>C#</span>
+                            <span>Unity</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        
-        <!-- Main Start -->
-
-        <!--About me-->
-        <section class="about" id="about">
-            <div class="content">
-                <div class="title">
-                    <span>About me</span>
+        <section class="section section-muted" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">About</p>
+                    <h2>A developer who likes building things that solve real problems.</h2>
                 </div>
-                <div class="about-details">
-                    <div class="left">
-                        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/449700657_3356874561112473_7121754879974583157_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGbBTrOKlNyvANqXnA_Gptknlf4oJ2-hgmeV_ignb6GCczgwvi_n7hvPnx6eMR0ayDeowhxurf4rmL_DK-rOXwa&_nc_ohc=NWlEJVFt_1oQ7kNvgGJku4Z&_nc_oc=AdjfIat43FF2kRsFCCqpGTVvTd7hV6U1-G5cQeCDrZXX43b-w-A_Mva0y4g04bwS2ME&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=oHCxx_d4jlSn4JM2cYkp8g&oh=00_AYG4Bs47_8wKA67Mc24sChZtMHX8Aq_enEDEwltmK9dUPw&oe=67DC029D" alt="">
-                    </div>
-                    <div class="right">
-                        <div class="topic">Game QA is My Passion</div>
+
+                <div class="about-grid">
+                    <div class="about-copy reveal">
                         <p>
-                            BLANK
+                            I graduated with a Bachelor of Science in Information Technology and continue to strengthen my skills through hands-on projects in web development, databases, and game development.
                         </p>
-                        <div class="button">
-                            <button>Download CV</button>
-                        </div>
+                        <p>
+                            I enjoy taking a project from an idea to a working interface—planning the flow, writing the logic, improving the user experience, and fixing the details that make it feel complete.
+                        </p>
+                    </div>
+
+                    <div class="about-cards reveal">
+                        <article class="info-card">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            <div>
+                                <h3>Education</h3>
+                                <p>BS Information Technology</p>
+                            </div>
+                        </article>
+                        <article class="info-card">
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                            <div>
+                                <h3>Primary Focus</h3>
+                                <p>Web Development</p>
+                            </div>
+                        </article>
+                        <article class="info-card">
+                            <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                            <div>
+                                <h3>Creative Focus</h3>
+                                <p>Game Development</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--My skill-->
-        <section class="skills" id="skills">
-            <div class="content">
-                <div class="title">
-                    <span>My Skills</span>
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Skills</p>
+                    <h2>Tools I use to turn ideas into working projects.</h2>
+                    <p>I prefer showing the technologies I actually work with instead of arbitrary percentage ratings.</p>
                 </div>
-                <div class="skills-details">
-                    <div class="text">
-                        <div class="topic">
-                            Skills Reflects Our Knowledge
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                        <h3>Frontend</h3>
+                        <div class="tag-list">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span>
                         </div>
-                        <p data-aos="fade-right">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, 
-                            a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). 
-                            Length and appearance do not determine whether a section in a paper is a paragraph.</p>
-                        <div class="experience">
-                            <div class="num">10
-                                <div class="exp">
-                                    Month Of <br/> Experience
-                                </div>
-                            </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+                        <h3>Backend & Data</h3>
+                        <div class="tag-list">
+                            <span>PHP</span><span>MySQL</span><span>Firebase</span><span>AJAX</span>
                         </div>
-                        <div class="boxes">
-                            <div class="box">
-                                <div class="topic">Computer Skills</div>
-                                <div class="per">91%</div>
-                            </div>
-                            <div class="box">
-                                <div class="topic">QA</div>
-                                <div class="per">85%</div>
-                            </div>
-                            <div class="box">
-                                <div class="topic">HTML</div>
-                                <div class="per">70%</div>
-                            </div>
-                            <div class="box">
-                                <div class="topic">CSS</div>
-                                <div class="per">67%</div>
-                            </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></div>
+                        <h3>Game Development</h3>
+                        <div class="tag-list">
+                            <span>C#</span><span>Unity</span><span>2D Gameplay</span><span>Game QA</span>
                         </div>
-                    </div>
+                    </article>
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+                        <h3>Workflow</h3>
+                        <div class="tag-list">
+                            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Responsive Design</span>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!--My services-->
-        <section class ="service" id="services">
-            <div class="content">
-                <div class="title"><span>My Experience</span></div>
-                <div class="boxes">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fas fa-keyboard"></i>
+        <section class="section section-muted" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Projects</p>
+                    <h2>Selected work and hands-on builds.</h2>
+                    <p>Projects that reflect the way I learn: build something useful, test it, and keep improving it.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-number">01</div>
+                        <div class="project-icon"><i class="fa-solid fa-cash-register" aria-hidden="true"></i></div>
+                        <h3>Inventory & Debt Management System</h3>
+                        <p>A web-based grocery inventory and debt-management system with POS features, purchase orders, reporting, and notifications.</p>
+                        <div class="tag-list compact">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span>
                         </div>
-                        <div class="topic">Encoder</div>
-                        <p>Blank stqwt</p>
-                        <img src="https://burst.shopifycdn.com/photos/macbook-air-on-desk.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fas fa-gamepad"></i>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-number">02</div>
+                        <div class="project-icon"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></div>
+                        <h3>Picture-to-PDF Web Tool</h3>
+                        <p>A browser-based tool for arranging uploaded photos into printable PDF layouts with multiple paper and photo-size options.</p>
+                        <div class="tag-list compact">
+                            <span>JavaScript</span><span>jsPDF</span><span>Canvas</span><span>Responsive UI</span>
                         </div>
-                        <div class="topic">QA Game</div>
-                        <p>Blank stqwt</p>
-                        <img src="https://burst.shopifycdn.com/photos/macbook-air-on-desk.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fas fa-desktop"></i>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-number">03</div>
+                        <div class="project-icon"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></div>
+                        <h3>Unity 2D Platformer</h3>
+                        <p>A mobile-focused platformer featuring movement, jumping, moving platforms, pause controls, audio settings, and timed gameplay events.</p>
+                        <div class="tag-list compact">
+                            <span>Unity</span><span>C#</span><span>Mobile UI</span><span>Gameplay Systems</span>
                         </div>
-                        <div class="topic">Web Development</div>
-                        <p>Blank stqwt</p>
-                        <img src="https://burst.shopifycdn.com/photos/macbook-air-on-desk.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
-                    </div>
+                    </article>
+                </div>
+
+                <div class="projects-cta reveal">
+                    <a class="text-link" href="https://github.com/jp12345q" target="_blank" rel="noreferrer">See more on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
 
-        <!--Contact #-->
-        <section class="contact" id="contact">
-            <div class="content">
-                <div class="title">
-                    <span>Contact Me</span>
-                </div>
-                <div class="text">
-                    <div class="topic">Any have conversation about me?</div>
-                    <div class="button">
-                        <button>Let's Chat</button>
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <div>
+                        <p class="section-kicker">Contact</p>
+                        <h2>Want to see what I'm building next?</h2>
+                        <p>My GitHub is the best place to explore my repositories, experiments, and project updates.</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a class="button button-primary" href="https://github.com/jp12345q" target="_blank" rel="noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Visit GitHub</a>
+                        <a class="button button-secondary" href="https://twitter.com/jonpuroyohane" target="_blank" rel="noreferrer"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Connect on X</a>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Footer -->
-        <footer>
-            <div class="text">
-                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-            </div>
-        </footer>
-
-        <!--
-        <script src="/JAVASCRIPT/scripter.js">
-        </script>
-        -->
-
-    </body>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="current-year"></span> John Paul Verdad. Built with HTML, CSS & JavaScript.</p>
+            <a href="#top" aria-label="Back to top">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+</body>
 </html>
