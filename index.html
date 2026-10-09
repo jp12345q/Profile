@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of John Paul Verdad, an Information Technology graduate focused on web and game development.">
-    <meta name="theme-color" content="#0b1020">
+    <meta name="theme-color" content="#080d18">
+    <meta name="color-scheme" content="dark light">
     <title>John Paul Verdad | Developer Portfolio</title>
 
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -36,6 +37,7 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle color theme"><i class="fa-solid fa-sun" aria-hidden="true"></i></button>
         </nav>
     </header>
 
@@ -55,6 +57,7 @@
                         <a class="button button-secondary" href="https://github.com/jp12345q" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a>
                     </div>
 
+                    <div class="hero-meta"><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Philippines</span><span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Open to opportunities</span></div>
                     <div class="social-row" aria-label="Social links">
                         <a href="https://github.com/jp12345q" target="_blank" rel="noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
                         <a href="https://twitter.com/jonpuroyohane" target="_blank" rel="noreferrer" aria-label="X / Twitter profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
@@ -75,6 +78,7 @@
                             <p class="indent"><span class="code-property">status</span>: <span class="code-string">"Building"</span></p>
                             <p>};</p>
                         </div>
+                        <div class="panel-bottom"><span class="panel-live"><span class="status-dot"></span> Currently exploring new ideas</span><span>01 / Portfolio</span></div>
                         <div class="panel-stack">
                             <span>PHP</span>
                             <span>JavaScript</span>
@@ -102,6 +106,7 @@
                         <p>
                             I enjoy taking a project from an idea to a working interface—planning the flow, writing the logic, improving the user experience, and fixing the details that make it feel complete.
                         </p>
+                        <div class="about-signature"><span class="signature-line"></span><span>Thoughtful design. Functional code.</span></div>
                     </div>
 
                     <div class="about-cards reveal">
@@ -182,7 +187,7 @@
 
                 <div class="projects-grid">
                     <article class="project-card reveal">
-                        <div class="project-number">01</div>
+                        <div class="project-preview preview-inventory" aria-label="Inventory dashboard"><div class="preview-browser"><span></span><span></span><span></span><small>dashboard / overview</small></div><div class="preview-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="preview-metrics"><b>Dashboard</b><span>Analytics · Stock · Sales</span></div></div><div class="project-number">01</div>
                         <div class="project-icon"><i class="fa-solid fa-cash-register" aria-hidden="true"></i></div>
                         <h3>Inventory & Debt Management System</h3>
                         <p>A web-based grocery inventory and debt-management system with POS features, purchase orders, reporting, and notifications.</p>
@@ -192,7 +197,7 @@
                     </article>
 
                     <article class="project-card reveal">
-                        <div class="project-number">02</div>
+                        <div class="project-preview preview-pdf" aria-label="PDF layout preview"><div class="preview-browser"><span></span><span></span><span></span><small>workspace / preview</small></div><div class="preview-pages"><i></i><i></i><i></i></div><div class="preview-metrics"><b>Print-ready</b><span>Arrange · Preview · Export</span></div></div><div class="project-number">02</div>
                         <div class="project-icon"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></div>
                         <h3>Picture-to-PDF Web Tool</h3>
                         <p>A browser-based tool for arranging uploaded photos into printable PDF layouts with multiple paper and photo-size options.</p>
@@ -202,7 +207,7 @@
                     </article>
 
                     <article class="project-card reveal">
-                        <div class="project-number">03</div>
+                        <div class="project-preview preview-game" aria-label="Game level preview"><div class="preview-browser"><span></span><span></span><span></span><small>game / level 01</small></div><div class="preview-game-art"><i></i><i></i><i></i><b>▶</b></div><div class="preview-metrics"><b>Level design</b><span>Build · Play · Iterate</span></div></div><div class="project-number">03</div>
                         <div class="project-icon"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></div>
                         <h3>Unity 2D Platformer</h3>
                         <p>A mobile-focused platformer featuring movement, jumping, moving platforms, pause controls, audio settings, and timed gameplay events.</p>
@@ -235,6 +240,7 @@
         </section>
     </main>
 
+    <div class="scroll-progress" aria-hidden="true"></div>
     <footer class="site-footer">
         <div class="container footer-inner">
             <p>&copy; <span id="current-year"></span> John Paul Verdad. Built with HTML, CSS & JavaScript.</p>

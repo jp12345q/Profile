@@ -77,3 +77,40 @@ if ('IntersectionObserver' in window && sections.length) {
 
     sections.forEach((section) => sectionObserver.observe(section));
 }
+
+
+// Theme preference is persisted locally; defaults to the original dark palette.
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = themeToggle?.querySelector('i');
+function applyTheme(theme) {
+    const light = theme === 'light';
+    document.documentElement.dataset.theme = light ? 'light' : 'dark';
+    if (themeIcon) themeIcon.className = light ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+    themeToggle?.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#f5f7fc' : '#080d18');
+}
+let savedTheme = 'dark';
+try { savedTheme = localStorage.getItem('portfolio-theme') || 'dark'; } catch (_) {}
+applyTheme(savedTheme);
+themeToggle?.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    try { localStorage.setItem('portfolio-theme', next); } catch (_) {}
+});
+
+const scrollProgress = document.querySelector('.scroll-progress');
+let frameRequested = false;
+function updateScrollProgress() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const percent = max > 0 ? window.scrollY / max * 100 : 0;
+    if (scrollProgress) scrollProgress.style.width = `${Math.max(0, Math.min(percent, 100))}%`;
+    frameRequested = false;
+}
+window.addEventListener('scroll', () => {
+    if (!frameRequested) {
+        requestAnimationFrame(updateScrollProgress);
+        frameRequested = true;
+    }
+}, { passive: true });
+window.addEventListener('resize', updateScrollProgress, { passive: true });
+updateScrollProgress();
